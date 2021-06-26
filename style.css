@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  /* background: linear-gradient(#ff0404 #111111); */
+  overflow: hidden;
+  background-color: rgb(15, 57, 63);
+  /* background-color: #0f3638; */
+}
+
+.form-flex {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+.form-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-left-img {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/images/left-image-1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.form-left img {
+  min-width: 100%;
+  height: 100vh;
+}
+
+.form-right {
+  width: 50%;
+}
+
+.form-right form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  height: 300px;
+}
+
+.form-right form h1 {
+  margin-bottom: 1.5rem;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.form-right form .input-group {
+  width: 100%;
+  position: relative;
+}
+
+.form-right form .input-group i {
+  position: absolute;
+  top: 26%;
+  left: 5%;
+  color: #173f47;
+}
+
+.form-right form .input-groups {
+  width: 60%;
+}
+
+.form-right form input[type='email'],
+.form-right form input[type='password'] {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1rem 0 1rem 3rem;
+  margin-bottom: 0.8rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.form-right form input[type='email']::placeholder,
+.form-right form input[type='password']::placeholder {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.form-right form input[type='submit'] {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 60%;
+  padding: 0.9rem 0;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  background-color: #ffffff;
+  color: #0f292e;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+}
+
+.form-right form span {
+  letter-spacing: 1px;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .form-right form .input-groups {
+    width: 80%;
+  }
+  .form-right form input[type='submit'] {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .form-right form .input-groups {
+    width: 90%;
+  }
+  .form-right form input[type='submit'] {
+    width: 90%;
+  }
+
+  .form-right form span {
+    font-size: 14px;
+  }
+
+  .form-right form h1 {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .form-left {
+    display: none;
+  }
+
+  .form-right {
+    width: 100%;
+  }
+
+  .form-right form .input-groups {
+    width: 80%;
+  }
+  .form-right form input[type='submit'] {
+    width: 80%;
+  }
+
+  .form-right form h1 {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-left {
+    display: none;
+  }
+
+  .form-right {
+    width: 100%;
+  }
+
+  .form-right form .input-groups {
+    width: 90%;
+  }
+  .form-right form input[type='submit'] {
+    width: 90%;
+  }
+
+  .form-right form h1 {
+    font-size: 38px;
+  }
+}
